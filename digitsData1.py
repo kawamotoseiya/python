@@ -2,9 +2,9 @@ import sys
 sys.path.append("/Users/kawamotoseiya/Library/Python/3.7/lib/python/site-packages")
 
 import sklearn.datasets
+import matplotlib.pyplot as plt
 
 digits = sklearn.datasets.load_digits()
 
-print("kosuu", len(digits.images))
-print("gazoudata",digits.images[0])
-print("number",digits.target[0])
+plt.imshow(digits.images[0],cmap="Greys")
+plt.show()
